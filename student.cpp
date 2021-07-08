@@ -79,6 +79,16 @@ void DisplayMenu()
     }
 }
 
+void FillData()
+{
+Student Adam("Adam", "Kowalski", "Gdansk", 123, "00243059988", "Male");
+Student Ewa("Ewa", "Nowak", "Poznan", 123, "57080162573", "Female");
+Student Rafal("Rafal", "Malinowski", "Wroclaw", 789, "93032497982", "Male");
+vectorOfStudent.push_back(Adam);
+vectorOfStudent.push_back(Ewa);
+vectorOfStudent.push_back(Rafal);
+}
+
 void DisplayDB(std::vector<Student>& data)
 {
     if (data.size() == 0)
@@ -86,6 +96,12 @@ void DisplayDB(std::vector<Student>& data)
         std::cout<<"no data to display\n";
     }
     size_t i = 0;
+        std::cout<<"Name\t";
+        std::cout<<"Surname\t";
+        std::cout<<"Address\t";
+        std::cout<<"Index \t";
+        std::cout<<"PESEL\t";
+        std::cout<<"Gender\t\n";
     for(auto & val : data)
     {
         std::cout<<++i<<". ";

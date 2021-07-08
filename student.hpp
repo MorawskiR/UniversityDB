@@ -29,7 +29,6 @@ class Student{
     { 
         
         std::string peseltest = pesel;
-        std::cout<<"peseltest = " <<peseltest<<"\n";
         bool validation = false;
         while(!validation)
         {
@@ -59,7 +58,7 @@ class Student{
                 }
             else
                 { 
-                std::cout<<"nie poprawny pesel podaj ponownie: ";
+                std::cout<<"invalid PESEL number, please enter again: ";
                 std::cin>>peseltest;
                 }
             
