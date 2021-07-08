@@ -61,7 +61,6 @@ class Student{
                 std::cout<<"invalid PESEL number, please enter again: ";
                 std::cin>>peseltest;
                 }
-            
            }
            else
            {
