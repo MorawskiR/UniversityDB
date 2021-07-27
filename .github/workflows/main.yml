@@ -17,7 +17,8 @@ jobs:
       run: |
         cmake ..
         make
-
+        cmake ..
+        cmake --build .
 
 # name: main
 # on: [push]
