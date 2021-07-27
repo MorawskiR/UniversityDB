@@ -6,7 +6,7 @@ jobs:
   add-even:
     runs-on: ubuntu-latest
     env:
-      path: UniversityDB/CMakeLists.txt 
+      path: UniversityDB/build
     steps:
     - name: Check out code
       uses: actions/checkout@master
@@ -18,7 +18,7 @@ jobs:
         cmake ..
         make
 
-        
+
 # name: main
 # on: [push]
 # jobs:
