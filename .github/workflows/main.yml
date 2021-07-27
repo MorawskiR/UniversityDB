@@ -1,11 +1,32 @@
-name: main
+name: add-even
+
 on: [push]
+
 jobs:
-  check-bats-version:
+  add-even:
     runs-on: ubuntu-latest
+    env:
+      path: UniversityDB/CMakeLists.txt 
     steps:
-      - uses: CMakeLists.txt 
-      - run: mkdir build
-      - run: cd build
-      - run: cmake ..
-      - run: cmake --build .
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: Create build directory
+      run: mkdir ${{ env.path }}
+    - name: Compile
+      working-directory: ${{ env.path }}
+      run: |
+        cmake ..
+        make
+
+        
+# name: main
+# on: [push]
+# jobs:
+#   check-bats-version:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: CMakeLists.txt 
+#       - run: mkdir build
+#       - run: cd build
+#       - run: cmake ..
+#       - run: cmake --build .
