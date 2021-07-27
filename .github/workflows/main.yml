@@ -1,12 +1,8 @@
 name: main
-
 on: [push]
 jobs:
-  run project:
+  check-bats-version:
     runs-on: ubuntu-latest
     steps:
       - run: mkdir build
       - run: cd build
-      - run: cmake 
-      - run: cmake --build .
-
