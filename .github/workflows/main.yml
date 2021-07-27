@@ -19,6 +19,7 @@ jobs:
         make
         cmake ..
         cmake --build .
+        ./UNIV
 
 # name: main
 # on: [push]
