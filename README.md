@@ -1,5 +1,6 @@
 # UniversityDB
-
-to compile 
-g++ main.cpp student.cpp
-./a.out
+to run 
+mkdir build     
+cd build        
+cmake ..        
+cmake --build . 
