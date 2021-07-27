@@ -1,6 +1,6 @@
 name: main
 
-on: [commit]
+on: [push]
 jobs:
   run project:
     runs-on: ubuntu-latest
