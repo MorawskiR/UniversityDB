@@ -237,7 +237,7 @@ void EraseByIndeNumber(std::vector<Student> & data)
 
     for(auto & val : data)
     {
-        if (!temp == val.getIndex())
+        if ((!temp) == (val.getIndex()))
         {
             std::cout<<"index does not exist.\n";
         }
