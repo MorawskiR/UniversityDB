@@ -1,5 +1,6 @@
 # UniversityDB
-to run 
+to run :
+
 mkdir build     
 cd build        
 cmake ..        
