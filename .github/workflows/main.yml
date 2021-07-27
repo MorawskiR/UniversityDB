@@ -4,6 +4,7 @@ jobs:
   check-bats-version:
     runs-on: ubuntu-latest
     steps:
+      - uses: CMakeLists.txt 
       - run: mkdir build
       - run: cd build
       - run: cmake ..
