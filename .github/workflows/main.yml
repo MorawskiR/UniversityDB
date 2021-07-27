@@ -6,7 +6,7 @@ jobs:
   add-even:
     runs-on: ubuntu-latest
     env:
-      path: UniversityDB/build
+      path: build
     steps:
     - name: Check out code
       uses: actions/checkout@master
