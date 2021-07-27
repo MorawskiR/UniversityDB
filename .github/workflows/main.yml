@@ -6,3 +6,5 @@ jobs:
     steps:
       - run: mkdir build
       - run: cd build
+      - run: cmake ..
+      - run: cmake --build .
