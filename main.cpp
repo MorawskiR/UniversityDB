@@ -1,11 +1,13 @@
 #include "student.hpp"
 #include <iostream>
+#include "Person.hpp"
+
 
 
 int main()
 {
 
-FillData();
-DisplayMenu();
+    Student s;
+    std::cout<<s.getName();
 
 }
