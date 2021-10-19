@@ -4,5 +4,6 @@ to run :
 mkdir build     
 cd build        
 cmake ..        
-cmake --build . 
+cmake --build .
+
 ./UNIV
