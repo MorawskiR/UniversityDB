@@ -3,7 +3,7 @@ project(UNIV)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED on )
-set(FILES student.cpp) # zmienna FILES zawiera main i studen 
+set(FILES test.cpp Student.cpp University.cpp)  # zmienna FILES zawiera main i studen 
 set(MAIN main.cpp)
 
 
