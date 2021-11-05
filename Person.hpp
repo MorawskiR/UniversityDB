@@ -8,20 +8,6 @@
 
 class Person{
 
-public:
-
-    std::string getName() const { return name_; }
-    std::string getSurname() const {return surname_;}
-    std::string getAddress() const {return address_;}
-    std::string getPesel() const {return pesel_;}
-    std::string getGender() const {return gender_;}
-
-    void set_name(const std::string &name) { name_ = name; }
-    void setSurname(const std::string& surname) { surname_ = surname; }
-    void setAddress(const std::string& address) { address_ = address; }
-    void setPesel(const std::string& pesel)  { pesel_ = pesel;}
-    void setGender(const std::string& gender) { gender_ = gender; }
-
 protected: 
 
     std::string name_ ;
@@ -29,6 +15,18 @@ protected:
     std::string pesel_;
     std::string gender_;
     std::string address_;
+    
+ public : 
 
+    virtual std::string getName()  = 0;
+    virtual std::string getSurname()= 0;
+    virtual std::string getAddress()= 0;
+    virtual std::string getPesel() = 0;
+    virtual std::string getGender()= 0;
+
+    virtual void setName(const std::string &name) = 0;
+    virtual void setSurname(const std::string& surname) = 0;
+    virtual void setAddress(const std::string& address) = 0;
+    virtual void setPesel(const std::string& pesel)  = 0;
+    virtual void setGender(const std::string& gender) = 0;
 };
-
