@@ -1,5 +1,5 @@
 #include <iostream>
-#include "Student.hpp"
+#include "student.hpp"
 
 
 Student::Student() {

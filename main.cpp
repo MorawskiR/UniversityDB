@@ -1,9 +1,9 @@
 #include <iostream>
-#include "Student.hpp"
-#include "University.hpp"
+#include "student.hpp"
+
 #include "Employee.hpp"
 #include <vector>
-#include "test.hpp"
+
 // g++-10 main.cpp Student.cpp University.cpp Employee.cpp Person.cpp test.cpp && ./a.out 
 int main()
 {
