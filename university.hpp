@@ -33,4 +33,6 @@ std::vector<Person*> persons_;
     void ChangeSalary(Employee e);
 
     static std::unique_ptr<Person> GetThing();
+
+    void DisplayDB2();
 };

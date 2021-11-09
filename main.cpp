@@ -29,9 +29,10 @@ int main()
     university.addRecord(personStudent);
     university.addRecord(personEmployee2);
     university.addRecord(personStudent2);
-    university.DisplayDB();
+    //university.DisplayDB();
     university.SearchSalaryByPesel("98765435678");
-    university.DisplayDB();
+    //university.DisplayDB();
+    university.DisplayDB2();
 }
     // persons.push_back(personStudent);
     // persons.push_back(personEmployee);
