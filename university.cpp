@@ -4,6 +4,7 @@
 #include <iostream>
 #include <algorithm>
 #include <string>
+#include <typeinfo>
 
 
 University::University()
@@ -58,3 +59,29 @@ void University::DisplayDB()
     // }
     }
 }
+
+    void University::SearchSalaryByPesel(std::string peselToUpdate)
+    {
+        auto record = *std::find_if(persons_.cbegin(), persons_.cend(), [peselToUpdate](const auto &s){ return s->getPesel() == peselToUpdate;});
+
+    //std::unique_ptr<Person> p = University::GetThing();
+    Employee* c = dynamic_cast<Employee*>(record);
+
+        c->setSalary(1000);
+        std::cout<<"aaaaaaaaAA";
+    std::cout<<"nowe salary" <<c->getSalary();
+      
+        //   const std::type_info& type_info = typeid(*record);
+        //    if( type_info == typeid(Employee) ) std::cout << "aaaaaaaaaaaaaaaaaaaaaaaaa\n" 
+    }
+    void University::ChangeSalary(Employee e)
+    {
+        std::cout<<e.getName();
+        e.setSalary(1000);
+    }
+
+    static std::unique_ptr<Person> GetThing()
+    {
+        return std::make_unique<Employee>();
+    }
+    
