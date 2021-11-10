@@ -29,6 +29,6 @@ protected:
     virtual void setAddress(const std::string& address) = 0;
     virtual void setPesel(const std::string& pesel)  = 0;
     virtual void setGender(const std::string& gender) = 0;
-
+    
   
 };

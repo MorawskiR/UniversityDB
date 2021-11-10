@@ -35,4 +35,6 @@ std::vector<Person*> persons_;
     static std::unique_ptr<Person> GetThing();
 
     void DisplayDB2();
+    void sortBySalary();
+    
 };

@@ -11,10 +11,10 @@ int main()
 {
 
 
-    Employee employee("Robol", "2000", "Wroclaw", "76543212345", "Male",9000);
+    Employee employee("Robol", "Robotniczy", "Wroclaw", "76543212345", "Male", 1000);
     Student student("Kamil", "Zdun", "Gdynia", "90876543456", "Male", 12345);
 
-    Employee employee2("Adi", "Panek", "Warsaw", "98765435678", "Male", 1000);
+    Employee employee2("Adi", "Panek", "Warsaw", "98765435678", "Male", 2000);
 
     Student student2("Kahna", "Trabalski", "Poznan","3456789098", "Female",34562);
 
@@ -30,14 +30,8 @@ int main()
     university.addRecord(personEmployee2);
     university.addRecord(personStudent2);
     //university.DisplayDB();
-    university.SearchSalaryByPesel("98765435678");
+    //university.SearchSalaryByPesel("98765435678");
     //university.DisplayDB();
-    university.DisplayDB2();
+    university.sortBySalary();
+  
 }
-    // persons.push_back(personStudent);
-    // persons.push_back(personEmployee);
-    // persons.push_back(personStudent2);
-    // persons.push_back(personEmployee2);
-
-    // for(const auto & x : persons)
-    // { std::cout<<x->getName()<<"\n";}
