@@ -29,7 +29,7 @@ std::vector<Person*> persons_;
 
     void addRecord( Person * personEmployee);
     void DisplayDB();
-    void SearchSalaryByPesel(std::string peselToUpdate);
+    void ModifySalaryByPesel(std::string peselToUpdate);
     void ChangeSalary(Employee e);
 
     static std::unique_ptr<Person> GetThing();
