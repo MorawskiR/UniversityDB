@@ -1,0 +1,3 @@
+Name	Surname	Address	Index	Pesel	Gender
+Adam File Gdansk 123 00243059988 Male
+Marian Kozak Warszawa 568 57122543212 Male

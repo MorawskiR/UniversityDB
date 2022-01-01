@@ -9,6 +9,13 @@ void Test::testSearchByName(Student s1)
     if(s1.getName() =="Ewa" )
     {
         std::cout<<"test search By name passed\n";
+            std::cout<<s1.getName()<<"\t";
+            std::cout<<s1.getSurname()<<"\t";
+            std::cout<<s1.getAddress()<<"\t";
+            std::cout<<s1.getIndex()<<"\t";
+            std::cout<<s1.getPesel()<<"\t";
+            std::cout<<s1.getGender()<<"\t";
+            std::cout<<"\n";
     }
     else{
         std::cout<<"test search By name failed\n";
@@ -21,21 +28,28 @@ void Test::testSearchByPesel(Student s1)
     if(s1.getName() =="Ewa" )
     {
         std::cout<<"test search By Pesel passed\n";
+            std::cout<<s1.getName()<<"\t";
+            std::cout<<s1.getSurname()<<"\t";
+            std::cout<<s1.getAddress()<<"\t";
+            std::cout<<s1.getIndex()<<"\t";
+            std::cout<<s1.getPesel()<<"\t";
+            std::cout<<s1.getGender()<<"\t";
     }
     else{
                 std::cout<<"test search By Pesel failed\n";
-
     }
 }
 
 void Test::sortbyPesel(std::vector<Student> data)
 {
+
     if((data[0].getPesel() == "00243059988") && (data[1].getPesel() == "57080162573"))
      {
-        std::cout<<"test set By Pesel passed\n";
+        std::cout<<"\ntest sort By Pesel passed\n";
+        
     }
     else{
-        std::cout<<"test set By Pesel failed\n";
+        std::cout<<"test sort By Pesel failed\n";
     }
 }
 

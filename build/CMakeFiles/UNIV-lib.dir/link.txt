@@ -1,0 +1,2 @@
+/usr/bin/ar qc libUNIV-lib.a  CMakeFiles/UNIV-lib.dir/test.cpp.o CMakeFiles/UNIV-lib.dir/Student.cpp.o CMakeFiles/UNIV-lib.dir/University.cpp.o
+/usr/bin/ranlib libUNIV-lib.a
